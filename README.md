@@ -11,8 +11,11 @@ Este repositário contém:
 - Execute o caso de teste desejado (Atalho: CTRL+R) ou todos eles em sequência (Atalho: CTRL+Shift+R)
 
 2) WebDriver: Projeto exportado para C# / NUnit e refinado com o auxílio do Visual Studio
-- Para executá-lo, é necessário ter o Visual Studio configurado para a execução de testes Selenium pelo navegador de sua escolha (utilizei o Firefox)
+- Para executá-lo, é recomendado ter o Visual Studio configurado para a execução de testes Selenium pelo navegador de sua escolha (utilizei o Firefox)
 - Plugins utilizados: Selenium.WebDriver (v3.141.0), Selenium.WebDriver.GeckoDriver (v0.29.0), Selenium.Support (v3.141.0), NUnit (v3.13.1), NUnit3TestAdapter (v3.17)
+- Carregue o projeto no VS ou no ambiente de sua escolha
+- Abra a janela "Test Explorer" e, com o botão direito, dê inicio aos testes de sua escolha (Atalho: CTRL+R, depois T)
+- Reconfigure as variáveis que desejar no método SetUp de cada teste
 
 3) NUnit: Projeto final exportado para NUnit, para fácil execução
 - É preciso baixar e instalar o NUnit Console em seu computador (Versão Utilizada: 3.12)
@@ -45,14 +48,17 @@ CT02SelectProduct:
 - Fluxo Alternativo: O carrinho está vazio
 
 CT03CheckCartTest:
-- Cliente acessa o carrinho de compras
+- Cliente procura um produto
+- Cliente adiciona o produto ao carrinho de compras
+- Cliente acessa o carrinho
 - Cliente confere sua compra
 - Fluxo Alternativo: O carrinho está vazio
 - Fluxo Alternativo: O carrinho contém mais de um item
 - Fluxo Alternativo: O preço total da compra não confere com o preço unitário do produto
 - Fluxo Alternativo: O produto não é uma Brastemp
+- Caso Base: A compre está de acordo com a espectativa do cliente
 
 Também:
-- Verifica a existência do botão do carrinho de compras
+- Verifica o funcionamento dos botões para entrar e sair do carrinho de compras
 - Verifica a existência de textos, botões e ícones esperados na página do carrinho
 - É uma versão mais completa do teste executado ao final do CT02, cujo objetivo era apenas verificar se o item foi adicionado ao carrinho
