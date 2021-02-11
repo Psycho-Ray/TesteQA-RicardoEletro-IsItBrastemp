@@ -25,9 +25,8 @@ Este repositário contém:
 
 
 
-Descrição dos casos de teste:
+A bateria de testes (ST01BuyBrastemp) consiste em três testes, que consideram fluxos alternativos:
 
-A bateria de testes (ST01BuyBrastemp) consiste em três testes, mais fluxos alternativos:
 CT01Search:
 - Cliente procura um produto (o texto da busca pode ser ajustado na variável searchText do SetUp do teste)
 - Caso Base: Produtos foram encontrados com sucesso
