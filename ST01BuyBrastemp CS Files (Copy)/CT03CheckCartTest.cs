@@ -38,6 +38,17 @@ namespace ST01BuyBrastemp {
             driver.Navigate().GoToUrl("https://www.ricardoeletro.com.br/");
             driver.Manage().Window.Size = new System.Drawing.Size(1280, 720);
 
+            //Quick Buy
+            driver.FindElement(By.Id("search-desktop")).SendKeys("Geladeira Brastemp");
+            driver.FindElement(By.CssSelector("#i9-search-desktop__addon > img")).Click();
+            driver.FindElement(By.CssSelector(".col-12:nth-child(1) .card-header")).Click();
+            driver.FindElement(By.LinkText("ADICIONAR AO CARRINHO")).Click();
+
+            //Waits for the cart page to load, then leaves it
+            WebDriverWait wait = new WebDriverWait(driver, System.TimeSpan.FromSeconds(30));
+            wait.Until(driver => driver.FindElements(By.LinkText("VOLTAR")).Count > 0);
+            driver.FindElement(By.LinkText("VOLTAR")).Click();
+
             //Validate Cart Button
             var cartButton = driver.FindElements(By.CssSelector(".i9-header__desktop--cart"));
             Assert.True(cartButton.Count > 0);
@@ -76,7 +87,6 @@ namespace ST01BuyBrastemp {
             Assert.True(driver.FindElements(By.CssSelector(".checkout-steps-progress-bar")).Count > 0);
             Assert.True(driver.FindElements(By.CssSelector(".checkout-steps-progress-bar.step1")).Count > 0);
             Assert.True(driver.FindElements(By.CssSelector(".i9-header__desktop__checkout .i9-header-banner__logo")).Count > 0);
-
 
             //Validate Page Text Layout
             Assert.That(driver.FindElement(By.CssSelector(".checkout-steps-title")).Text, Is.EqualTo("Carrinho"));
