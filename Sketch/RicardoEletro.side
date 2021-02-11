@@ -1,0 +1,1558 @@
+{
+  "id": "4aec0935-2a0a-4a98-b2fc-74f66e23fa9c",
+  "version": "2.0",
+  "name": "RicardoEletro",
+  "url": "https://www.ricardoeletro.com.br/",
+  "tests": [{
+    "id": "94127f72-4083-44f2-b358-243945815867",
+    "name": "CT01Search",
+    "commands": [{
+      "id": "fbeb4ad2-29d7-4b95-9476-6a66757f50c1",
+      "comment": "",
+      "command": "//Open in Desktop Mode",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1988c300-1e28-4e6d-9391-3411caa13aa2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ricardoeletro.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "011868a5-e149-46e8-abe0-66858883a38e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16775a92-3dda-44c9-8f3e-81241759bd8f",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef9a0a3b-5838-4eeb-ae3f-a6b05afdf341",
+      "comment": "",
+      "command": "//Validate \"Search Bar\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bafc736-c1bc-4acd-a013-59c4858688c6",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=search-desktop",
+      "targets": [
+        ["id=search-desktop", "id"],
+        ["css=#search-desktop", "css:finder"],
+        ["xpath=//input[@id='search-desktop']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-desktop']/div/div/input", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2095056-84ff-465c-9427-5369ac47d3a1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#i9-search-desktop__addon > img",
+      "targets": [
+        ["css=#i9-search-desktop__addon > img", "css:finder"],
+        ["xpath=(//img[@alt='Lupa'])[3]", "xpath:img"],
+        ["xpath=//button[@id='i9-search-desktop__addon']/img", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6088bca7-75d1-4c74-901f-8f3eb85c3c78",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-desktop",
+      "targets": [
+        ["id=search-desktop", "id"],
+        ["css=#search-desktop", "css:finder"],
+        ["xpath=//input[@id='search-desktop']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-desktop']/div/div/input", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": "Geladeira Brastemp"
+    }, {
+      "id": "8dcb0c76-674d-4b5d-a1c1-5d8a3969e8c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=i9-search-desktop__addon",
+      "targets": [
+        ["id=i9-search-desktop__addon", "id"],
+        ["css=#i9-search-desktop__addon", "css:finder"],
+        ["xpath=//button[@id='i9-search-desktop__addon']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-desktop']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f9a7422-db86-4c1b-b126-51eee179d9ca",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adc94b14-6f80-47d9-9435-579a4128a14c",
+      "comment": "",
+      "command": "//Validade \"Search Results\" Page Layout",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f806d68-8412-4e8e-9c82-4d594ae30879",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-options-total-products > span",
+      "targets": [
+        ["css=.catalog-options-total-products > span", "css:finder"],
+        ["xpath=//div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Busca: Geladeira Brastemp')]", "xpath:innerText"]
+      ],
+      "value": "Busca: Geladeira Brastemp"
+    }, {
+      "id": "8b32c863-36fb-4859-98a1-3e61444062f3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#open-order-options-desktop > span",
+      "targets": [
+        ["css=#open-order-options-desktop > span", "css:finder"],
+        ["xpath=//div[@id='open-order-options-desktop']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ordenar por: Relevância')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33050b5f-6ded-4f19-b5fa-a271d7473aab",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2777bc9c-829b-47d5-9a3f-033a265692ce",
+      "comment": "",
+      "command": "//Validade \"Sort By\" Menu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a6b1320-92a6-412e-80de-09f8977b5a83",
+      "comment": "",
+      "command": "click",
+      "target": "css=small",
+      "targets": [
+        ["css=small", "css:finder"],
+        ["xpath=//div[@id='open-order-options-desktop']/span/small", "xpath:idRelative"],
+        ["xpath=//small", "xpath:position"],
+        ["xpath=//small[contains(.,'Relevância')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66f93b8d-40ca-4865-8ce5-b70346e87b71",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Mais Vendidos",
+      "targets": [
+        ["linkText=Mais Vendidos", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mais Vendidos')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=0&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mais Vendidos')]", "xpath:innerText"]
+      ],
+      "value": "Mais Vendidos"
+    }, {
+      "id": "b610b816-3abd-4b7d-abad-6a62b9eea4ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Menor Preço",
+      "targets": [
+        ["linkText=Menor Preço", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Menor Preço')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=1&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Menor Preço')]", "xpath:innerText"]
+      ],
+      "value": "Menor Preço"
+    }, {
+      "id": "78fa5db4-1511-424f-aa0b-28674b53230d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Marca",
+      "targets": [
+        ["linkText=Marca", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Marca')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=2&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Marca')]", "xpath:innerText"]
+      ],
+      "value": "Marca"
+    }, {
+      "id": "c169b72e-7bb5-43a4-ae6a-81ac19b0cd05",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Ordem Alfabética",
+      "targets": [
+        ["linkText=Ordem Alfabética", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ordem Alfabética')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=3&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ordem Alfabética')]", "xpath:innerText"]
+      ],
+      "value": "Ordem Alfabética"
+    }, {
+      "id": "b6a91e37-4acb-4164-933b-9e6893876a1d",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Mais Novos",
+      "targets": [
+        ["linkText=Mais Novos", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Mais Novos')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=4&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mais Novos')]", "xpath:innerText"]
+      ],
+      "value": "Mais Novos"
+    }, {
+      "id": "140c6a36-bc8b-42da-b9be-b79840a912ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Preço De/Por",
+      "targets": [
+        ["linkText=Preço De/Por", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Preço De/Por')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=5&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Preço De/Por')]", "xpath:innerText"]
+      ],
+      "value": "Preço De/Por"
+    }, {
+      "id": "667792c7-cbf4-4d5e-afd6-c9d7b256487e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Relevância",
+      "targets": [
+        ["linkText=Relevância", "linkText"],
+        ["css=.active:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Relevância')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=6&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Relevância')]", "xpath:innerText"]
+      ],
+      "value": "Relevância"
+    }, {
+      "id": "f1eaf6bb-74bb-4b97-8983-546147a86eb1",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Melhor Avaliados",
+      "targets": [
+        ["linkText=Melhor Avaliados", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Melhor Avaliados')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=7&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Melhor Avaliados')]", "xpath:innerText"]
+      ],
+      "value": "Melhor Avaliados"
+    }, {
+      "id": "14a07620-bc9a-4662-a729-fdd75cea6659",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8ec489f-10c5-423b-98b0-8c2b75d88cfa",
+      "comment": "",
+      "command": "//Validate \"Show As\" Menu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b3f43e5-d28f-441a-bbb7-346c3f4df9ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-options-showby > span",
+      "targets": [
+        ["css=.catalog-options-showby > span", "css:finder"],
+        ["xpath=//div[5]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Exibir Como:')]", "xpath:innerText"]
+      ],
+      "value": "Exibir Como:"
+    }, {
+      "id": "ebec2fe1-388e-48bd-af74-d29621d7f06c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon_thumbs-icon",
+      "targets": [
+        ["css=.icon_thumbs-icon", "css:finder"],
+        ["xpath=//div[5]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "893648cf-c2a2-4c66-84ed-2cd5d7f7122a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon_list-show-icon",
+      "targets": [
+        ["css=.icon_list-show-icon", "css:finder"],
+        ["xpath=//i[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b448a56-cabd-4aa1-b729-08741605c54a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\<li > span",
+      "targets": [
+        ["css=.\\<li > span", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55e8972c-9fca-4c9f-9de8-296070cdef70",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d47506a-4c69-4492-8db9-36a1a3c729c7",
+    "name": "CTM01SearchMobile",
+    "commands": [{
+      "id": "2e3ab642-e380-4862-95cc-bfd52dc213b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ricardoeletro.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58ffc62d-6449-4709-977c-69e838ca9ad8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "720x1280",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ddc7e4b-bcba-4728-9f1b-517dedc3f6a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.i9-header__nav__menu__list",
+      "targets": [
+        ["css=.i9-header__nav__menu__list", "css:finder"],
+        ["xpath=//ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21c930d7-7982-4840-b2fc-e7fe4c826e45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.i9-header__nav__menu__list__item__toggle-search > img",
+      "targets": [
+        ["css=.i9-header__nav__menu__list__item__toggle-search > img", "css:finder"],
+        ["xpath=//img[@alt='Busca']", "xpath:img"],
+        ["xpath=//li[2]/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "120850c4-924f-43b4-97b8-e84b5b22bc8f",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=search-mobile",
+      "targets": [
+        ["id=search-mobile", "id"],
+        ["name=q", "name"],
+        ["css=#search-mobile", "css:finder"],
+        ["xpath=//input[@id='search-mobile']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-mobile']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ae369ef-8e0b-4ac3-9195-bdb104ea8ee0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#i9-search-mobile__addon > img",
+      "targets": [
+        ["css=#i9-search-mobile__addon > img", "css:finder"],
+        ["xpath=//img[@alt='Lupa']", "xpath:img"],
+        ["xpath=//button[@id='i9-search-mobile__addon']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e946e2c8-4f93-4d44-bf37-913d622054c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-mobile",
+      "targets": [
+        ["id=search-mobile", "id"],
+        ["name=q", "name"],
+        ["css=#search-mobile", "css:finder"],
+        ["xpath=//input[@id='search-mobile']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-mobile']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Geladeira Brastemp"
+    }, {
+      "id": "7565e7e6-dd2f-44f9-9fa7-294c5e0da98c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#i9-search-mobile__addon > img",
+      "targets": [
+        ["css=#i9-search-mobile__addon > img", "css:finder"],
+        ["xpath=//img[@alt='Lupa']", "xpath:img"],
+        ["xpath=//button[@id='i9-search-mobile__addon']/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "792e13a0-ae33-4f63-b790-69214a87c17c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#open-order-options > span",
+      "targets": [
+        ["css=#open-order-options > span", "css:finder"],
+        ["xpath=//div[@id='open-order-options']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Ordenar Por')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe3daff1-16b3-4a5b-86d8-897a1c4698bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=open-order-options",
+      "targets": [
+        ["id=open-order-options", "id"],
+        ["css=#open-order-options", "css:finder"],
+        ["xpath=//div[@id='open-order-options']", "xpath:attributes"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2221720-6a42-402e-afd0-12a12dbac14a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#order-options span:nth-child(1)",
+      "targets": [
+        ["css=#order-options span:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='order-options']/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span", "xpath:position"]
+      ],
+      "value": "ORDENAR POR"
+    }, {
+      "id": "d7e015cd-cc12-4b51-9258-1fc943d49253",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Mais Vendidos",
+      "targets": [
+        ["linkText=Mais Vendidos", "linkText"],
+        ["css=.col-12:nth-child(1) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Mais Vendidos')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=0&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/div/div/div/a", "xpath:position"]
+      ],
+      "value": "Mais Vendidos"
+    }, {
+      "id": "e353c67b-f9fa-419b-9683-332463702f25",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Menor Preço",
+      "targets": [
+        ["linkText=Menor Preço", "linkText"],
+        ["css=.col-12:nth-child(2) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Menor Preço')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=1&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "Menor Preço"
+    }, {
+      "id": "2f416737-228f-47fc-ad1e-4799733b1a2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Marca",
+      "targets": [
+        ["linkText=Marca", "linkText"],
+        ["css=.col-12:nth-child(3) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Marca')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=2&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": "Marca"
+    }, {
+      "id": "5fa5d895-e51f-4de8-ba23-107cab2342fb",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Ordem Alfabética",
+      "targets": [
+        ["linkText=Ordem Alfabética", "linkText"],
+        ["css=.col-12:nth-child(4) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ordem Alfabética')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=3&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[4]/a", "xpath:position"]
+      ],
+      "value": "Ordem Alfabética"
+    }, {
+      "id": "4ef1aad6-a4c4-4094-aba6-cac94d2e7fea",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Mais Novos",
+      "targets": [
+        ["linkText=Mais Novos", "linkText"],
+        ["css=.col-12:nth-child(5) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Mais Novos')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=4&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": "Mais Novos"
+    }, {
+      "id": "68995c21-1336-442d-872d-5b4bce73be26",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Mais Novos",
+      "targets": [
+        ["linkText=Mais Novos", "linkText"],
+        ["css=.col-12:nth-child(5) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Mais Novos')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=4&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[5]/a", "xpath:position"]
+      ],
+      "value": "Mais Novos"
+    }, {
+      "id": "62522c9d-8f19-4f48-aeee-111b87aff340",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Preço De/Por",
+      "targets": [
+        ["linkText=Preço De/Por", "linkText"],
+        ["css=.col-12:nth-child(6) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Preço De/Por')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=5&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[6]/a", "xpath:position"]
+      ],
+      "value": "Preço De/Por"
+    }, {
+      "id": "2f1bbed1-d898-4d96-9a8a-481bc85ceb38",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Relevância",
+      "targets": [
+        ["linkText=Relevância", "linkText"],
+        ["css=.col-12:nth-child(7) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Relevância')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=6&limit=24')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[7]/a", "xpath:position"]
+      ],
+      "value": "Relevância"
+    }, {
+      "id": "feea8f04-59a2-4708-8111-21b74f834b88",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Melhor Avaliados",
+      "targets": [
+        ["linkText=Melhor Avaliados", "linkText"],
+        ["css=.col-12:nth-child(8) > .i9-orderby", "css:finder"],
+        ["xpath=(//a[contains(text(),'Melhor Avaliados')])[2]", "xpath:link"],
+        ["xpath=//div[@id='order-options']/div[2]/div/div/div[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=7&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[8]/a", "xpath:position"]
+      ],
+      "value": "Melhor Avaliados"
+    }, {
+      "id": "8814e691-1bbd-4a12-8958-81a0b4311105",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#order-options .catalog-options-overflow-title-close",
+      "targets": [
+        ["css=#order-options .catalog-options-overflow-title-close", "css:finder"],
+        ["xpath=//div[@id='order-options']/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2efc623d-bd62-433b-b5a8-461cfc66d275",
+      "comment": "",
+      "command": "click",
+      "target": "css=#order-options .catalog-options-overflow-title-close",
+      "targets": [
+        ["css=#order-options .catalog-options-overflow-title-close", "css:finder"],
+        ["xpath=//div[@id='order-options']/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d70a1bc-c225-444c-928a-d60fef088fe3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-options__grid > #open-filter-options > span",
+      "targets": [
+        ["css=.catalog-options__grid > #open-filter-options > span", "css:finder"],
+        ["xpath=//div[@id='open-filter-options']/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Filtros')]", "xpath:innerText"]
+      ],
+      "value": "Filtros"
+    }, {
+      "id": "dd937f72-abb1-474d-a000-0bf594a1ab6b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon_filters-icon",
+      "targets": [
+        ["css=.icon_filters-icon", "css:finder"],
+        ["xpath=//div[@id='open-filter-options']/i", "xpath:idRelative"],
+        ["xpath=//div[4]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "817bbb81-5b70-4c3d-bd8b-f86337832866",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon_filters-icon",
+      "targets": [
+        ["css=.icon_filters-icon", "css:finder"],
+        ["xpath=//div[@id='open-filter-options']/i", "xpath:idRelative"],
+        ["xpath=//div[4]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e6b10bf-0306-4a99-97ba-1b303ee6a6d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#filter-options > #open-filter-options > span:nth-child(1)",
+      "targets": [
+        ["css=#filter-options > #open-filter-options > span:nth-child(1)", "css:finder"],
+        ["xpath=(//div[@id='open-filter-options']/span)[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"]
+      ],
+      "value": "FILTROS"
+    }, {
+      "id": "d1014a53-d6e8-4699-afde-33a26c6bbf23",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.catalog-options-overflow-content .catalog-product-sidebar-title",
+      "targets": [
+        ["css=.catalog-options-overflow-content .catalog-product-sidebar-title", "css:finder"],
+        ["xpath=//div[@id='filter-options']/div[2]/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"]
+      ],
+      "value": "Eletrodomésticos"
+    }, {
+      "id": "7f32ab05-e782-4d1c-837e-4130109f38db",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Refrigerador",
+      "targets": [
+        ["linkText=Refrigerador", "linkText"],
+        ["css=.catalog-options-overflow-content .col-12:nth-child(2) > .i9-filter-busca", "css:finder"],
+        ["xpath=(//a[contains(text(),'Refrigerador')])[2]", "xpath:link"],
+        ["xpath=//div[@id='filter-options']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=270&q=Geladeira Brastemp&precode=&precoate=&ordenacao=6&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a", "xpath:position"]
+      ],
+      "value": "Refrigerador"
+    }, {
+      "id": "f8312868-37e4-4e57-ab45-ffae17c813e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Freezer",
+      "targets": [
+        ["linkText=Freezer", "linkText"],
+        ["css=.catalog-options-overflow-content .col-12:nth-child(3) > .i9-filter-busca", "css:finder"],
+        ["xpath=(//a[contains(text(),'Freezer')])[2]", "xpath:link"],
+        ["xpath=//div[@id='filter-options']/div[2]/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=378&q=Geladeira Brastemp&precode=&precoate=&ordenacao=6&limit=24')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": "Freezer"
+    }, {
+      "id": "af7b2a07-c52e-47b8-a2fe-2c4c57cfa7ba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=#open-filter-options > .catalog-options-overflow-title-close",
+      "targets": [
+        ["css=#open-filter-options > .catalog-options-overflow-title-close", "css:finder"],
+        ["xpath=//div[@id='open-filter-options']/span[2]", "xpath:idRelative"],
+        ["xpath=//div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f0537f-e37e-4368-b647-c67063cd7196",
+      "comment": "",
+      "command": "click",
+      "target": "css=#open-filter-options > .catalog-options-overflow-title-close",
+      "targets": [
+        ["css=#open-filter-options > .catalog-options-overflow-title-close", "css:finder"],
+        ["xpath=//div[@id='open-filter-options']/span[2]", "xpath:idRelative"],
+        ["xpath=//div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd2cebf-f92a-4894-86eb-44f27ed6a6cb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\<li > span",
+      "targets": [
+        ["css=.\\<li > span", "css:finder"],
+        ["xpath=//li[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb8729b-8c76-484f-9759-448f704b91f0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "65e3ec85-dd12-4db9-ba76-aa950cee34f3",
+    "name": "CT02SelectProduct",
+    "commands": [{
+      "id": "5b2023b5-a586-448e-a743-d3df0505d65b",
+      "comment": "",
+      "command": "//Opens in Desktop Mode",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4364c4fa-10ab-46e3-8129-d2a16ef1b181",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ricardoeletro.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "508cceca-25ae-440e-8d59-66d953d8b59d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2133769d-00ec-4676-b3ab-51202cc2b2fa",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "feff817e-e3e0-43a0-bf60-fbfef81a2c85",
+      "comment": "",
+      "command": "//Searches by Rating",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca9f66cc-62b7-46e2-82e5-dc73a5f09cf9",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-desktop",
+      "targets": [
+        ["id=search-desktop", "id"],
+        ["css=#search-desktop", "css:finder"],
+        ["xpath=//input[@id='search-desktop']", "xpath:attributes"],
+        ["xpath=//form[@id='form-search-desktop']/div/div/input", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/input", "xpath:position"]
+      ],
+      "value": "Geladeira Brastemp"
+    }, {
+      "id": "8de5a501-1967-4eca-a5f6-d7fe34c7c282",
+      "comment": "",
+      "command": "click",
+      "target": "css=#i9-search-desktop__addon > img",
+      "targets": [
+        ["css=#i9-search-desktop__addon > img", "css:finder"],
+        ["xpath=(//img[@alt='Lupa'])[3]", "xpath:img"],
+        ["xpath=//button[@id='i9-search-desktop__addon']/img", "xpath:idRelative"],
+        ["xpath=//header[2]/div/div/form/div/div/div/button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e21046a9-3401-4320-93d9-9b9f8bb2b93f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#open-order-options-desktop > .arrow-down",
+      "targets": [
+        ["css=#open-order-options-desktop > .arrow-down", "css:finder"],
+        ["xpath=//div[@id='open-order-options-desktop']/i", "xpath:idRelative"],
+        ["xpath=//div[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78cf091e-ff45-4803-8275-ff94507d27e1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Melhor Avaliados",
+      "targets": [
+        ["linkText=Melhor Avaliados", "linkText"],
+        ["css=#order-options-desktop > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Melhor Avaliados')]", "xpath:link"],
+        ["xpath=//ul[@id='order-options-desktop']/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Busca/Resultado/?p=1&loja=&q=Geladeira Brastemp&precode=&precoate=&ordenacao=7&limit=24')]", "xpath:href"],
+        ["xpath=//div/div/div/div[3]/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Melhor Avaliados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "845d6374-9532-40d6-8a79-1614c403c441",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c94a83c0-e9f4-4cf1-b1b9-44694885c311",
+      "comment": "",
+      "command": "//(todo) for each product",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe6f957a-452a-4289-8fe8-c8e0d16e048f",
+      "comment": "",
+      "command": "//Gathers the product's info",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31c32e58-164e-4259-907f-fb1709447037",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-12:nth-child(1) .card-title",
+      "targets": [
+        ["css=.col-12:nth-child(1) .card-title", "css:finder"],
+        ["xpath=//div[@id='products']/div/a/div[2]/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Refrigerador | Geladeira Brastemp Frost Free 2 Portas 400 Litros Branco - BRM54HB')]", "xpath:innerText"]
+      ],
+      "value": "productName"
+    }, {
+      "id": "e4e01656-1587-41d5-a91c-46385714a137",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-12:nth-child(1) .i9-product-card__price",
+      "targets": [],
+      "value": "productPrice"
+    }, {
+      "id": "7ba65e7c-4dc1-4f96-80c5-dddf690e7046",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2863fc6a-9adc-459e-9e1e-3027081bd5d0",
+      "comment": "",
+      "command": "//Checks if it's in stock",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02f28083-f3ea-43c9-a228-c2b079d2e60a",
+      "comment": "",
+      "command": "if",
+      "target": "${productPrice} == 'Produto Indisponível'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b56c9f0-ddcf-4610-a2bb-685ca3d36157",
+      "comment": "",
+      "command": "echo",
+      "target": "Product Out of Stock: ${productName}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47e601e6-46c0-488d-8efd-6446005b53dc",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abb30977-32fd-4d05-842d-28d44438cd05",
+      "comment": "",
+      "command": "//(todo) Checks if it's outside our price range",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3cd166b8-d56e-4ea0-af08-32a3868b807b",
+      "comment": "",
+      "command": "//elseIf",
+      "target": "${productPrice} > 3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c5fe13c-abb9-457a-9f25-c355dca53b09",
+      "comment": "",
+      "command": "//echo",
+      "target": "Product Too Expensive: ${productName}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "115c1ead-b2c8-49d7-94a3-c30f425d7ae1",
+      "comment": "",
+      "command": "//elseIf",
+      "target": "${productPrice} < 2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdc6c8ac-8544-433a-b94d-b20ac341dd78",
+      "comment": "",
+      "command": "//echo",
+      "target": "Product Too Cheap: ${productName}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85a17c76-6fc9-4eb9-b3f8-079a85ea5c01",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd613dc9-862b-4d18-b969-b3dd34a275d1",
+      "comment": "",
+      "command": "//Goes to the Product Page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c375b89f-e684-4fcd-bfde-366a98d89ec2",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8e0b442-999d-47b2-b85d-bd7473279364",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-12:nth-child(1) .i9-product-card__price",
+      "targets": [
+        ["css=.col-12:nth-child(1) .i9-product-card__price", "css:finder"],
+        ["xpath=//div[@id='products']/div/a/div[3]/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'R$ 3.079,00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "910dd69a-fb0a-471b-8e4c-1991910743ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-12:nth-child(1) .card-header",
+      "targets": [
+        ["css=.col-12:nth-child(1) .card-header", "css:finder"],
+        ["xpath=//div[@id='products']/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c49b97d-3f78-4220-9137-3018b7010ebf",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cd363aa-047a-475e-91b4-e309d7cb679e",
+      "comment": "",
+      "command": "//Discard the product if it's not a Brastemp",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "145d627f-7257-4ed9-ba5a-9aeef35575f3",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.d-sm-inline-block",
+      "targets": [],
+      "value": "productBrand"
+    }, {
+      "id": "2480deda-4884-491d-9621-f00662caf1f1",
+      "comment": "",
+      "command": "if",
+      "target": "${productBrand} != 'Brastemp'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f98441f-0789-4610-902e-c7efed216f6a",
+      "comment": "",
+      "command": "echo",
+      "target": "It's not a Brastemp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23bd72d6-94a3-43cb-8801-36407ddfc15a",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70dea290-b2d5-4ec6-9cc0-65a05a4a1e4d",
+      "comment": "",
+      "command": "//Otherwise, buy it",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e2ff40-f423-40a4-8212-cb4cd9df3bfb",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21aebca6-8033-4cb2-9746-c409a6125584",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=ADICIONAR AO CARRINHO",
+      "targets": [
+        ["linkText=ADICIONAR AO CARRINHO", "linkText"],
+        ["css=.i9-add-cart", "css:finder"],
+        ["xpath=//a[contains(text(),'ADICIONAR AO CARRINHO')]", "xpath:link"],
+        ["xpath=//main[@id='product']/section/div/div/div[2]/div/div[5]/div/div[7]/div/a", "xpath:idRelative"],
+        ["xpath=//div[7]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ADICIONAR AO CARRINHO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6928cf44-8b95-4ec1-bc82-5d8c0f157380",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ADICIONAR AO CARRINHO",
+      "targets": [
+        ["linkText=ADICIONAR AO CARRINHO", "linkText"],
+        ["css=.i9-add-cart", "css:finder"],
+        ["xpath=//a[contains(text(),'ADICIONAR AO CARRINHO')]", "xpath:link"],
+        ["xpath=//main[@id='product']/section/div/div/div[2]/div/div[5]/div/div[7]/div/a", "xpath:idRelative"],
+        ["xpath=//div[7]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ADICIONAR AO CARRINHO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a56713f2-d75b-4097-b9ec-68e26768236f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff7b3a3c-a02e-4cdb-9dcd-7b07c2bc8bc1",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7d166d2e-60ed-4dad-bd76-f9d9176d1334",
+    "name": "CT03CheckCart",
+    "commands": [{
+      "id": "5be03204-a42b-4766-b0e5-bf53f242223f",
+      "comment": "",
+      "command": "//Open in Desktop Mode",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c82beaf7-d15c-42c6-87bd-7f66c1fe25ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.ricardoeletro.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f24a645-dde8-481b-8719-b0f96636ace6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adb99d24-bfa4-4184-9075-fe8b00968e3b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aeeb2f44-4ae3-482e-bbf2-0bbf87ce79de",
+      "comment": "",
+      "command": "//Validate and click on the Cart button",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59a477c6-ccba-4ffc-a81e-9d0a74b589c2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.i9-header__desktop--cart",
+      "targets": [
+        ["css=.i9-header__desktop--cart", "css:finder"],
+        ["xpath=//a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5748dcb-3e45-4d3c-9571-5f4419e3cccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.i9-header__desktop--cart",
+      "targets": [
+        ["css=.i9-header__desktop--cart", "css:finder"],
+        ["xpath=//a[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df5c40ce-0eb9-4057-b4e8-4f446e5ec53c",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "341dfdab-a8ac-4403-9b24-2444644024bf",
+      "comment": "",
+      "command": "//Checks if the cart is empty",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a94e0a7c-e5c1-40f9-88dd-fbd9dfb53f2b",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.i9-balao > p:nth-child(1)",
+      "targets": [
+        ["css=.i9-balao > p:nth-child(1)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'SEU CARRINHO AINDA ESTÁ VAZIO :(')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e92d18f-543d-4165-aed4-c0ebc2928613",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a23321f-74f6-4595-9f9c-694a03dbdee2",
+      "comment": "",
+      "command": "//Checks if there is more than one item on the cart",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f10b4970-0b4d-4cd6-835a-0fbfde670058",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.col-12:nth-child(3) .cart-checkout-products-product-remove",
+      "targets": [
+        ["css=.col-12:nth-child(3) .cart-checkout-products-product-remove", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[3]/div/div[9]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[9]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5574527e-2888-4106-97b3-c97c160fd23d",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b52121bf-2e74-4b6f-8032-d9220163e6cc",
+      "comment": "",
+      "command": "//Validate Page Layout",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f10f1342-f5df-4da4-a15c-6a546af05f54",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.icon_cart-step-icon",
+      "targets": [
+        ["css=.icon_cart-step-icon", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section/div/div/div/div/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce13057c-c1fd-4164-a691-cf06c5924def",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.checkout-steps-title",
+      "targets": [
+        ["css=.checkout-steps-title", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section/div/div/div[4]/span", "xpath:idRelative"],
+        ["xpath=//div[4]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Carrinho')]", "xpath:innerText"]
+      ],
+      "value": "Carrinho"
+    }, {
+      "id": "5232a97a-0bcd-41d7-962b-22e11aeaa932",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.d-none > .row > .col-4",
+      "targets": [
+        ["css=.d-none > .row > .col-4", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "PRODUTO"
+    }, {
+      "id": "b702f631-535d-4ec8-9932-7d76b8f5548c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-2:nth-child(2)",
+      "targets": [
+        ["css=.col-2:nth-child(2)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "FRETE"
+    }, {
+      "id": "5e8f9ea2-e361-4bdc-9dc1-aebc374b9ee4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-1",
+      "targets": [
+        ["css=.col-1", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": "QTD"
+    }, {
+      "id": "8e6345d4-9d80-4668-9f36-954ceb5a1d73",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-2:nth-child(4)",
+      "targets": [
+        ["css=.col-2:nth-child(4)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div/div/div[4]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div[4]", "xpath:position"]
+      ],
+      "value": "UNITÁRIO"
+    }, {
+      "id": "be7d433f-7449-447c-9def-2a5852a6491e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-2:nth-child(5)",
+      "targets": [
+        ["css=.col-2:nth-child(5)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": "TOTAL"
+    }, {
+      "id": "fc7ad749-fd3a-41b0-b9df-48d3335d73d5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-freight-actions-form-title",
+      "targets": [
+        ["css=.product-freight-actions-form-title", "css:finder"],
+        ["xpath=//form[@id='calculaFrete']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/div", "xpath:position"]
+      ],
+      "value": "CONSULTE O FRETE"
+    }, {
+      "id": "dd49fac6-e9cd-4218-a550-5868073898d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-discount-actions-form-title",
+      "targets": [
+        ["css=.product-discount-actions-form-title", "css:finder"],
+        ["xpath=//form[@id='product-discount']/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/div", "xpath:position"]
+      ],
+      "value": "CUPOM DE DESCONTO"
+    }, {
+      "id": "c774c5a1-1f1c-4941-a46f-42895f710973",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-freight-actions-form-title",
+      "targets": [
+        ["css=.product-freight-actions-form-title", "css:finder"],
+        ["xpath=//form[@id='calculaFrete']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91aca508-5b97-40dc-91a4-f89ece32ad84",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.product-discount-actions-form-title",
+      "targets": [
+        ["css=.product-discount-actions-form-title", "css:finder"],
+        ["xpath=//form[@id='product-discount']/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc8b93e-5df9-4a52-bca4-4f7aa336b96d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=VOLTAR",
+      "targets": [
+        ["linkText=VOLTAR", "linkText"],
+        ["css=.btn-action", "css:finder"],
+        ["xpath=//a[contains(text(),'VOLTAR')]", "xpath:link"],
+        ["xpath=//main[@id='cart-checkout']/section[3]/div/div/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.ricardoeletro.com.br')])[89]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VOLTAR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fddc9e0f-8983-41bc-8089-c838bb7c2d51",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=concluir-compra",
+      "targets": [
+        ["id=concluir-compra", "id"],
+        ["linkText=AVANÇAR", "linkText"],
+        ["css=#concluir-compra", "css:finder"],
+        ["xpath=//a[contains(text(),'AVANÇAR')]", "xpath:link"],
+        ["xpath=//a[@id='concluir-compra']", "xpath:attributes"],
+        ["xpath=//main[@id='cart-checkout']/section[3]/div/div/div[4]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ricardoeletro.com.br/Checkout')]", "xpath:href"],
+        ["xpath=//div[4]/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'AVANÇAR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe45b04c-687e-4db8-8954-356d48ec09ef",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31d81468-b506-4907-acb1-3937170fcd3d",
+      "comment": "",
+      "command": "//Validate the product on the cart",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64f2fc5b-9ace-46dc-8c95-03a846b08d9e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.card-title",
+      "targets": [
+        ["css=.card-title", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[2]/div/div[2]/a/div[2]/h5", "xpath:idRelative"],
+        ["xpath=//h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'Refrigerador | Geladeira Brastemp Frost Free 2 Portas 400 Litros Branco - BRM54HB 110 V')]", "xpath:innerText"]
+      ],
+      "value": "cartProductName"
+    }, {
+      "id": "07bf5576-2114-47e1-93ac-1ebedc3cc9fe",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.i9-product-card__sold__by",
+      "targets": [],
+      "value": "cartProductBrand"
+    }, {
+      "id": "110295a3-51d8-4882-84a1-5ef99a0e2e2b",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=.col-lg-12", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[2]/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "81224970-1754-4632-8804-124b582a9da9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.valor-unitario",
+      "targets": [
+        ["css=.valor-unitario", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[2]/div/div[7]", "xpath:idRelative"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18f3988d-5620-4791-bbdd-bc6dd95f796b",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-12:nth-child(8)",
+      "targets": [
+        ["css=.col-12:nth-child(8)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[2]/div/div[8]", "xpath:idRelative"],
+        ["xpath=//div[8]", "xpath:position"]
+      ],
+      "value": "productTotal"
+    }, {
+      "id": "49cbcdaf-6ae2-4fc1-867d-7bc8a7d496a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-12:nth-child(2) > .cart-checkout-total-title",
+      "targets": [
+        ["css=.col-12:nth-child(2) > .cart-checkout-total-title", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[3]/div/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Total da sua compra')]", "xpath:innerText"]
+      ],
+      "value": "Total da sua compra"
+    }, {
+      "id": "d1f5e8b1-f2c2-4700-9858-1f211857f5b4",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-12:nth-child(8)",
+      "targets": [
+        ["css=.col-12:nth-child(8)", "css:finder"],
+        ["xpath=//main[@id='cart-checkout']/section[2]/div/div/div[2]/div/div[8]", "xpath:idRelative"],
+        ["xpath=//div[8]", "xpath:position"]
+      ],
+      "value": "cartTotal"
+    }, {
+      "id": "d0f74594-a4cc-469c-b6af-686f90e911b9",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "895e4e0d-a49d-4847-8ff5-870f3b614925",
+      "comment": "",
+      "command": "//Makes sure it's a Brastemp",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbef3938-ce36-41ed-9cb1-4801f6095a09",
+      "comment": "",
+      "command": "if",
+      "target": "${cartProductBrand} != 'Vendido por: Brastemp'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "707ae75c-0175-496d-8870-309a57de1a01",
+      "comment": "",
+      "command": "echo",
+      "target": "The product on the cart is not from Brastemp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1699ed3-18b8-42ec-ad5e-22f9c50f3895",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b4e40bc-2cc3-494b-9c91-2f97408244d1",
+      "comment": "",
+      "command": "//Confirms there is nothing else being charged",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a929ea2c-b121-4f4a-9f4c-9c602dae2520",
+      "comment": "",
+      "command": "elseIf",
+      "target": "(${productTotal} != ${cartTotal})",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af023ea0-9817-413b-8c30-97dcf7ad0f83",
+      "comment": "",
+      "command": "echo",
+      "target": "There is something else in the cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19b7ba46-95aa-4c7a-8326-f04ad25475bf",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54bb0129-2204-4d8a-b12d-1af4afb595da",
+      "comment": "",
+      "command": "//Validation completed",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a17602d-f381-4a93-b2db-6bc83999e414",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6710ea29-1c05-4c26-8b05-989a252f2739",
+      "comment": "",
+      "command": "echo",
+      "target": "Product ${cartProductName} is in the cart for ${cartTotal}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b00931f7-c755-429b-a742-28fd994e0123",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cecf7826-6f9a-4952-8c5c-9c171bd1cf95",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0cc84986-29ab-47cb-9dee-4d5c285a044a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["94127f72-4083-44f2-b358-243945815867"]
+  }],
+  "urls": ["https://www.ricardoeletro.com.br/", "https://kabum.com.br/"],
+  "plugins": []
+}
